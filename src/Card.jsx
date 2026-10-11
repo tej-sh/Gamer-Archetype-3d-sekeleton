@@ -19,20 +19,6 @@ export const Card = ({
       scale={card_scale}
       position={card_position}
       rotation={card_rotation}
-      // onPointerOver={(e) => {
-      //   e.stopPropagation();
-      //   setHovered(true);
-      // }}
-      // onPointerOut={(e) => {
-      //   e.stopPropagation();
-      //   setHovered(false);
-      // }}
-      // onClick={(e)=>{
-      //   e.stopPropagation()
-      //   console.log("yooo")
-      // }
-
-      // }
     >
       <pointLight
         intensity={0.2}
@@ -47,11 +33,6 @@ export const Card = ({
       </group>
 
       <group position={[-0.3, -3.5, 1]}>
-        {/* <mesh position={[0, 0, -0.01]}>
-          <planeGeometry args={[10, 4]} />
-          <meshBasicMaterial color="yellow" wireframe={true} />
-        </mesh> */}
-        {/* <pointLight intensity={0} distance={0.1} decay={2} position={[0,1, 10]} /> */}
 
         <Text
           fontSize={1.2}
