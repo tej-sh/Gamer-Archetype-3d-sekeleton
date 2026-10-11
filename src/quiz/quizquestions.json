@@ -1,0 +1,1012 @@
+{
+  "meta": {
+    "title": "Skeleton Poker Night: What's Your Gamer Archetype?",
+    "version": "3.0-short",
+    "language_style": "gen-z meme, dark humor, no emojis, short text for small cards",
+    "description": "20-question meme-style gamer personality quiz with dark humor. Each option adds 0-3 points to all four archetypes. Highest total wins.",
+    "total_questions": 20,
+    "options_per_question": 4,
+    "score_range_per_option": [
+      0,
+      3
+    ],
+    "text_limits": {
+      "question_max_chars": 32,
+      "option_max_chars": 32
+    }
+  },
+  "theme": {
+    "name": "Skeleton Poker Night",
+    "scene": "Three low-poly skeletons (witch hat, horned helmet, big cracked skull) playing poker at a green felt table with beer bottles, chips, cards, and an arcade cabinet in the back.",
+    "palette_hint": [
+      "dark moody background",
+      "felt green table",
+      "glowing yellow skeleton eyes",
+      "warm wood brown"
+    ]
+  },
+  "intro": {
+    "headline": "Pull up a chair.",
+    "subtext": "The skeletons are dealing your gamer personality.",
+    "button_text": "Deal me in"
+  },
+  "error_screen": {
+    "text": "if you see this the quiz is dead. you're probably a Goofball."
+  },
+  "archetypes": {
+    "survivor": {
+      "key": "S",
+      "name": "Survivor",
+      "core_personality": "Cautious, adaptive, resourceful, focused on staying alive",
+      "seat": "The skeleton hugging his chips and still alive somehow",
+      "result_blurb": "You hoard chips like last organs. Everyone here died already, you're still dodging it. Cockroach energy."
+    },
+    "goofball": {
+      "key": "G",
+      "name": "Goofball",
+      "core_personality": "Playful, experimental, unpredictable, chaos-loving",
+      "seat": "The one who bluffs with a pair of 2s and a dream",
+      "result_blurb": "Pair of 2s and a dream. You'll lose everything, laugh, and haunt the table anyway."
+    },
+    "predator": {
+      "key": "P",
+      "name": "Predator",
+      "core_personality": "Aggressive, competitive, confident, willing to take risks",
+      "seat": "The big cracked skull staring you down, chips stacked high",
+      "result_blurb": "Big skull energy. You took the pot and their will to queue again."
+    },
+    "tactician": {
+      "key": "T",
+      "name": "Tactician",
+      "core_personality": "Analytical, strategic, precise, focused on efficiency",
+      "seat": "The helmet skeleton counting cards",
+      "result_blurb": "You count cards, odds, and your remaining weekends. The helmet skeleton nods."
+    }
+  },
+  "scoring": {
+    "method": "sum_all_selected_option_scores",
+    "winner": "archetype_with_highest_total",
+    "default_question_weight": 1,
+    "question_weight_overrides": {
+      "14": {
+        "weight": 1,
+        "note": "Aesthetic is a weak personality signal. Can be lowered to 0.5 or dropped if desired."
+      }
+    },
+    "tie_break": {
+      "primary": "Use the scores from the option picked on Question 20",
+      "secondary": "If still tied, pick the archetype with the most 3-point hits across all answers",
+      "final": "If still tied, show the Goofball result"
+    },
+    "max_possible_per_archetype": {
+      "survivor": 56,
+      "goofball": 60,
+      "predator": 55,
+      "tactician": 54
+    }
+  },
+  "questions": [
+    {
+      "id": 1,
+      "text": "Game looks insane. You:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Buy it. Savings are fake",
+          "scores": {
+            "survivor": 0,
+            "goofball": 2,
+            "predator": 2,
+            "tactician": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Wait for 80% off",
+          "scores": {
+            "survivor": 3,
+            "goofball": 0,
+            "predator": 0,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Pirate it. The sea owes me",
+          "scores": {
+            "survivor": 2,
+            "goofball": 3,
+            "predator": 0,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Watch 5 reviews first",
+          "scores": {
+            "survivor": 1,
+            "goofball": 0,
+            "predator": 0,
+            "tactician": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "When does gamer mode start?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3am. Sleep is for the living",
+          "scores": {
+            "survivor": 2,
+            "goofball": 1,
+            "predator": 1,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "When the squad is online",
+          "scores": {
+            "survivor": 0,
+            "goofball": 3,
+            "predator": 1,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Daytime, brain on, no cap",
+          "scores": {
+            "survivor": 1,
+            "goofball": 0,
+            "predator": 1,
+            "tactician": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "Whenever. Time is dead too",
+          "scores": {
+            "survivor": 1,
+            "goofball": 3,
+            "predator": 2,
+            "tactician": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "How long is a session?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One hand, maybe two",
+          "scores": {
+            "survivor": 1,
+            "goofball": 1,
+            "predator": 1,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "1-2 hrs, then touch grass",
+          "scores": {
+            "survivor": 2,
+            "goofball": 0,
+            "predator": 1,
+            "tactician": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "Hours. Unfinished business",
+          "scores": {
+            "survivor": 2,
+            "goofball": 1,
+            "predator": 3,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Blinked, now I'm a skeleton",
+          "scores": {
+            "survivor": 1,
+            "goofball": 3,
+            "predator": 2,
+            "tactician": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Fav game type?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fast, loud, chaotic",
+          "scores": {
+            "survivor": 0,
+            "goofball": 2,
+            "predator": 3,
+            "tactician": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Slow, cozy, quiet dread",
+          "scores": {
+            "survivor": 3,
+            "goofball": 1,
+            "predator": 0,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Hard as nails, skill issue",
+          "scores": {
+            "survivor": 1,
+            "goofball": 0,
+            "predator": 3,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "Open world, crimes included",
+          "scores": {
+            "survivor": 1,
+            "goofball": 3,
+            "predator": 0,
+            "tactician": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "You find an OP bug. You:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Abuse it before the patch",
+          "scores": {
+            "survivor": 1,
+            "goofball": 1,
+            "predator": 3,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "Report it. Snitch mode",
+          "scores": {
+            "survivor": 2,
+            "goofball": 0,
+            "predator": 0,
+            "tactician": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "Push it for science",
+          "scores": {
+            "survivor": 0,
+            "goofball": 3,
+            "predator": 0,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "Ignore it, play normal",
+          "scores": {
+            "survivor": 3,
+            "goofball": 1,
+            "predator": 0,
+            "tactician": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Collect 500 random objects?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Nah, not unpaid labor",
+          "scores": {
+            "survivor": 1,
+            "goofball": 3,
+            "predator": 1,
+            "tactician": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Say less. All 500",
+          "scores": {
+            "survivor": 2,
+            "goofball": 1,
+            "predator": 3,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Only if the reward slaps",
+          "scores": {
+            "survivor": 3,
+            "goofball": 0,
+            "predator": 0,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "Speedrun this nonsense",
+          "scores": {
+            "survivor": 1,
+            "goofball": 1,
+            "predator": 1,
+            "tactician": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Dream run?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Beat it ASAP",
+          "scores": {
+            "survivor": 0,
+            "goofball": 1,
+            "predator": 3,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "100% explore, enjoy the void",
+          "scores": {
+            "survivor": 2,
+            "goofball": 3,
+            "predator": 0,
+            "tactician": 0
+          }
+        },
+        {
+          "id": "C",
+          "text": "Zero deaths, unlike us",
+          "scores": {
+            "survivor": 3,
+            "goofball": 0,
+            "predator": 2,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "Perfect route, zero joy",
+          "scores": {
+            "survivor": 0,
+            "goofball": 0,
+            "predator": 1,
+            "tactician": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Who's at your table?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Solo. Trust issues",
+          "scores": {
+            "survivor": 3,
+            "goofball": 0,
+            "predator": 0,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "Friends. Chaos together",
+          "scores": {
+            "survivor": 0,
+            "goofball": 3,
+            "predator": 1,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Ranked. Fresh meat only",
+          "scores": {
+            "survivor": 0,
+            "goofball": 0,
+            "predator": 3,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "Whatever, if it slaps",
+          "scores": {
+            "survivor": 1,
+            "goofball": 2,
+            "predator": 1,
+            "tactician": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Achievements are:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Cute bonus, not chasing",
+          "scores": {
+            "survivor": 1,
+            "goofball": 3,
+            "predator": 0,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Proof I'm him/her",
+          "scores": {
+            "survivor": 1,
+            "goofball": 0,
+            "predator": 3,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "A checklist. Must hit 100%",
+          "scores": {
+            "survivor": 2,
+            "goofball": 0,
+            "predator": 2,
+            "tactician": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "Side quests when I feel it",
+          "scores": {
+            "survivor": 2,
+            "goofball": 2,
+            "predator": 0,
+            "tactician": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Open-world RPG, first move?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Main quest, let's go",
+          "scores": {
+            "survivor": 1,
+            "goofball": 0,
+            "predator": 2,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "Ignore plot, explore it all",
+          "scores": {
+            "survivor": 2,
+            "goofball": 3,
+            "predator": 0,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Best gear first",
+          "scores": {
+            "survivor": 3,
+            "goofball": 0,
+            "predator": 1,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "3 hours fishing. No regrets",
+          "scores": {
+            "survivor": 0,
+            "goofball": 3,
+            "predator": 0,
+            "tactician": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Teammate at 1 HP, enemies push.",
+      "options": [
+        {
+          "id": "A",
+          "text": "\"Retreat, I got you\"",
+          "scores": {
+            "survivor": 3,
+            "goofball": 0,
+            "predator": 1,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "Rush them, die together",
+          "scores": {
+            "survivor": 0,
+            "goofball": 1,
+            "predator": 3,
+            "tactician": 0
+          }
+        },
+        {
+          "id": "C",
+          "text": "Make a plan, coordinate",
+          "scores": {
+            "survivor": 1,
+            "goofball": 0,
+            "predator": 1,
+            "tactician": 3
+          }
+        },
+        {
+          "id": "D",
+          "text": "Scream nonsense, survive",
+          "scores": {
+            "survivor": 2,
+            "goofball": 3,
+            "predator": 0,
+            "tactician": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Most fun game vibe?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Deep story, ugly crying",
+          "scores": {
+            "survivor": 2,
+            "goofball": 1,
+            "predator": 0,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Sandbox, my own victims",
+          "scores": {
+            "survivor": 0,
+            "goofball": 3,
+            "predator": 0,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Ranked, every W matters",
+          "scores": {
+            "survivor": 0,
+            "goofball": 0,
+            "predator": 3,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "Nothing vs impossible odds",
+          "scores": {
+            "survivor": 3,
+            "goofball": 0,
+            "predator": 1,
+            "tactician": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "A quest is cooking you.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Retry till it dies",
+          "scores": {
+            "survivor": 2,
+            "goofball": 0,
+            "predator": 3,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "B",
+          "text": "Open the guide, no shame",
+          "scores": {
+            "survivor": 1,
+            "goofball": 0,
+            "predator": 0,
+            "tactician": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "Cursed strategy time",
+          "scores": {
+            "survivor": 0,
+            "goofball": 3,
+            "predator": 1,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Skip it, bury the problem",
+          "scores": {
+            "survivor": 3,
+            "goofball": 2,
+            "predator": 0,
+            "tactician": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Fav aesthetic?",
+      "note": "Weak personality signal. Weight can be lowered or question dropped.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Realistic 3D nightmares",
+          "scores": {
+            "survivor": 1,
+            "goofball": 0,
+            "predator": 2,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "Colorful 3D, dead inside",
+          "scores": {
+            "survivor": 0,
+            "goofball": 3,
+            "predator": 1,
+            "tactician": 0
+          }
+        },
+        {
+          "id": "C",
+          "text": "Pixel art retro",
+          "scores": {
+            "survivor": 2,
+            "goofball": 2,
+            "predator": 0,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Clean 2D, no feelings",
+          "scores": {
+            "survivor": 1,
+            "goofball": 0,
+            "predator": 1,
+            "tactician": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Noob joins, clueless.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Teach them the ways",
+          "scores": {
+            "survivor": 2,
+            "goofball": 1,
+            "predator": 0,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "Test them, watch them grow",
+          "scores": {
+            "survivor": 0,
+            "goofball": 0,
+            "predator": 3,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "C",
+          "text": "Give cursed advice",
+          "scores": {
+            "survivor": 0,
+            "goofball": 3,
+            "predator": 0,
+            "tactician": 0
+          }
+        },
+        {
+          "id": "D",
+          "text": "Eyes on my cards, bestie",
+          "scores": {
+            "survivor": 3,
+            "goofball": 0,
+            "predator": 2,
+            "tactician": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Would you stream?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes, I'm the entertainment",
+          "scores": {
+            "survivor": 0,
+            "goofball": 3,
+            "predator": 1,
+            "tactician": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Yes, to flex my skills",
+          "scores": {
+            "survivor": 0,
+            "goofball": 1,
+            "predator": 3,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Maybe if I got something",
+          "scores": {
+            "survivor": 2,
+            "goofball": 1,
+            "predator": 1,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "No, my shame is private",
+          "scores": {
+            "survivor": 3,
+            "goofball": 0,
+            "predator": 0,
+            "tactician": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Last life, rare loot, enemy.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Run, protect the bag",
+          "scores": {
+            "survivor": 3,
+            "goofball": 0,
+            "predator": 0,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "Fight smart, wait for a gap",
+          "scores": {
+            "survivor": 2,
+            "goofball": 0,
+            "predator": 1,
+            "tactician": 3
+          }
+        },
+        {
+          "id": "C",
+          "text": "All in, loot means nothing",
+          "scores": {
+            "survivor": 0,
+            "goofball": 1,
+            "predator": 3,
+            "tactician": 0
+          }
+        },
+        {
+          "id": "D",
+          "text": "Do something unhinged",
+          "scores": {
+            "survivor": 1,
+            "goofball": 3,
+            "predator": 1,
+            "tactician": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Shortcut skips a hard part.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Take it, efficiency king",
+          "scores": {
+            "survivor": 1,
+            "goofball": 1,
+            "predator": 2,
+            "tactician": 3
+          }
+        },
+        {
+          "id": "B",
+          "text": "Nope, suffer as intended",
+          "scores": {
+            "survivor": 1,
+            "goofball": 0,
+            "predator": 2,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "C",
+          "text": "Test it, find more bones",
+          "scores": {
+            "survivor": 0,
+            "goofball": 3,
+            "predator": 0,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "D",
+          "text": "Only if I'm rage quitting",
+          "scores": {
+            "survivor": 3,
+            "goofball": 1,
+            "predator": 0,
+            "tactician": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Squad's plan dies in 10 secs.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Adapt, salvage it",
+          "scores": {
+            "survivor": 3,
+            "goofball": 0,
+            "predator": 0,
+            "tactician": 2
+          }
+        },
+        {
+          "id": "B",
+          "text": "Improvise something dumb",
+          "scores": {
+            "survivor": 0,
+            "goofball": 3,
+            "predator": 1,
+            "tactician": 0
+          }
+        },
+        {
+          "id": "C",
+          "text": "Take charge, hit back hard",
+          "scores": {
+            "survivor": 0,
+            "goofball": 0,
+            "predator": 3,
+            "tactician": 1
+          }
+        },
+        {
+          "id": "D",
+          "text": "Pause, regroup, new plan",
+          "scores": {
+            "survivor": 1,
+            "goofball": 0,
+            "predator": 0,
+            "tactician": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Best win feeling?",
+      "note": "Also used as the primary tie-breaker.",
+      "options": [
+        {
+          "id": "A",
+          "text": "Surviving a hopeless fight",
+          "scores": {
+            "survivor": 3,
+            "goofball": 1,
+            "predator": 1,
+            "tactician": 0
+          }
+        },
+        {
+          "id": "B",
+          "text": "Winning with a dumb play",
+          "scores": {
+            "survivor": 0,
+            "goofball": 3,
+            "predator": 0,
+            "tactician": 0
+          }
+        },
+        {
+          "id": "C",
+          "text": "Dominating, tears as trophy",
+          "scores": {
+            "survivor": 0,
+            "goofball": 0,
+            "predator": 3,
+            "tactician": 0
+          }
+        },
+        {
+          "id": "D",
+          "text": "Flawless plan, cold and clean",
+          "scores": {
+            "survivor": 0,
+            "goofball": 0,
+            "predator": 1,
+            "tactician": 3
+          }
+        }
+      ]
+    }
+  ]
+}
